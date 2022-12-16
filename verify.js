@@ -21,8 +21,6 @@ const verifyEnvs = (email, password, deviceId) => {
       process.exit(0);
     }
   };
-  //verifyEnvs(email, password, deviceId);
-  console.log(email, password, deviceId)
   console.log(`${email} attempting to authenticate to ${deviceId}`)
 
   /* Create Notion Object */
