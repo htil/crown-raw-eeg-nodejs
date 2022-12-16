@@ -1,0 +1,16 @@
+{
+  "name": "crown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neurosity/notion": "^5.17.0",
+    "cli-progress": "^3.11.2",
+    "dotenv": "^16.0.3"
+  }
+}
