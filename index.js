@@ -10,7 +10,7 @@ const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
 let currentProgress = 0
 let sampleNumber = 0
 let START = Date.now()
-let TRAIL_LENGTH = parseInt(process.argv[2]) || 3 //seconds
+let TRAIL_LENGTH = parseInt(process.argv[2]) || 10 //seconds
 let csv_data_obj = []
 let isDone = false
 bar1.start(TRAIL_LENGTH, 0);

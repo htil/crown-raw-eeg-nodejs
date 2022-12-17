@@ -2,7 +2,6 @@ import mne
 import numpy as np
 import csv
 
-
 annotations = None
 times = np.arange(0, 1, 0.000001)  # Use 1,000,000 samples (1hr)
 info = mne.create_info(ch_names=["A"], sfreq=256)
