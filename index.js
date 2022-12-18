@@ -34,10 +34,15 @@ const checkTime = () => {
   // Get current time
   let now = Date.now();
   let elapsed = (now - START);
-
+  let elapsed_scaled = elapsed / 1000
   // Update progress bar
-  bar1.update(( elapsed / 1000 ));
-
+  //bar1.update(( elapsed / 1000 ));
+  let progress_update = Math.floor(elapsed_scaled % 2)
+  //console.log(progress_update)
+  if (progress_update == 0){
+    //console.log(elapsed_scaled)
+    bar1.update(( elapsed / 1000 ));
+  }
   // Stop after time > TRAIL_LENGTH
   if (( elapsed / 1000 ) > TRAIL_LENGTH) {
       console.log("Data capture complete.")
