@@ -1,7 +1,7 @@
 const { Notion } = require("@neurosity/notion");
 require("dotenv").config();
 
-const deviceId = process.env.DEVICE_ID || "";
+const deviceId = process.env.DEVICE_ID_995 || "";
 const email = process.env.EMAIL || "";
 const password = process.env.PASSWORD || "";
 
